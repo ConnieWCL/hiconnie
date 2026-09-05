@@ -1,0 +1,14 @@
+.workbuddy/
+.backup_20260905/
+.backup_index_external_20260905.html
+_gallery/
+illustrations/
+generated-images/
+assets/
+node_modules/
+.DS_Store
+edit.js
+server.js
+site.js
+main.js
+styles.css
