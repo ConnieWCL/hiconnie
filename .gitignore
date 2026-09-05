@@ -4,7 +4,6 @@
 _gallery/
 illustrations/
 generated-images/
-assets/
 node_modules/
 .DS_Store
 edit.js
@@ -12,3 +11,4 @@ server.js
 site.js
 main.js
 styles.css
+.vercel
