@@ -112,9 +112,6 @@ img, svg { display: block; }
   max-width: 640px;
   margin-top: var(--sp-3);
 }
-/* ABOUT：大标题与小段落在同一行 */
-#about .sec__title { display: inline; max-width: none; }
-#about .sec__sub { display: inline; margin-top: 0; margin-left: 0.6em; }
 
 /* =========================================================
    顶部细导航
@@ -314,17 +311,20 @@ img, svg { display: block; }
 .card {
   scroll-snap-align: start;
   border: var(--bd); background: var(--paper); box-shadow: var(--shadow);
-  padding: var(--sp-3); display: flex; flex-direction: column;
+  padding: var(--sp-3);
+  display: grid;
+  grid-template-rows: auto auto 1fr auto auto;
+  height: 100%;
   transition: transform 0.12s ease, box-shadow 0.12s ease;
 }
 .card:hover { transform: translate(-3px, -3px); box-shadow: 9px 9px 0 var(--ink); }
 .card__illus { border: var(--bd); margin-bottom: var(--sp-3); aspect-ratio: 3/2; overflow: hidden; }
 .card__illus img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .card__title { font-family: var(--font-serif); font-weight: var(--w-bold); font-size: var(--fs-5); }
-.card__desc { font-size: var(--fs-3); color: var(--muted); margin-top: var(--sp-2); flex: 1; }
+.card__desc { font-size: var(--fs-3); color: var(--muted); margin-top: var(--sp-2); }
 .card__status {
   font-family: var(--font-mono); font-size: var(--fs-1);
-  margin-top: auto; padding-top: var(--sp-3); border-top: 2px dashed var(--ink);
+  padding-top: var(--sp-3); border-top: 2px dashed var(--ink);
   word-break: break-all; overflow-wrap: anywhere;
 }
 .card__status--building { color: var(--brick); }
